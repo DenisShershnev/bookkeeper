@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>676</width>
+    <height>511</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_5">
+   <item>
+    <layout class="QHBoxLayout" name="global_layout">
+     <item>
+      <layout class="QVBoxLayout" name="left_layout">
+       <item>
+        <widget class="QLabel" name="transaction_label">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="text">
+          <string>Новая транзакция</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="date_time_layout">
+         <item>
+          <widget class="QLabel" name="date_time_label">
+           <property name="text">
+            <string>Дата и время</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QDateTimeEdit" name="date_time"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="summ_layout">
+         <item>
+          <widget class="QLabel" name="summ_label">
+           <property name="text">
+            <string>Сумма     </string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="summ"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="category_layout">
+         <item>
+          <widget class="QLabel" name="category_label">
+           <property name="text">
+            <string>Категория</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="comment_layout">
+         <item>
+          <widget class="QLabel" name="comment_label">
+           <property name="text">
+            <string>Комментарий</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="comment"/>
+         </item>
+         <item>
+          <widget class="QPushButton" name="finish_button">
+           <property name="text">
+            <string>готово</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="right_layout">
+       <item>
+        <layout class="QVBoxLayout" name="categoty_tree_layout">
+         <item>
+          <widget class="QLabel" name="category_tree_label">
+           <property name="text">
+            <string>Категории</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QTreeView" name="category_tree"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="buttons_layout">
+         <item>
+          <widget class="QPushButton" name="add_button">
+           <property name="text">
+            <string>Добавить</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="edit_button">
+           <property name="text">
+            <string>Редактировать</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="delete_button">
+           <property name="text">
+            <string>Удалить</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

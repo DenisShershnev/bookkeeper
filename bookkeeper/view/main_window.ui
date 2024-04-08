@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>628</width>
+    <height>630</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <item>
+     <layout class="QVBoxLayout" name="global_layout">
+      <item>
+       <layout class="QVBoxLayout" name="expence_table_layout">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>Расходы</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTableView" name="table"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="bottom_layout">
+        <item>
+         <layout class="QVBoxLayout" name="budget_layout">
+          <item>
+           <widget class="QLabel" name="budget_label_2">
+            <property name="text">
+             <string>Бюджет</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="budget_table_layout">
+            <item>
+             <layout class="QVBoxLayout" name="title_layout">
+              <item>
+               <widget class="QLabel" name="empty_label">
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="day_3">
+                <property name="text">
+                 <string>День</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="week_3">
+                <property name="text">
+                 <string>Неделя</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="month_3">
+                <property name="text">
+                 <string>Месяц</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QVBoxLayout" name="summ">
+              <item>
+               <widget class="QLabel" name="summ_label">
+                <property name="text">
+                 <string>Сумма</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="day_2">
+                <property name="text">
+                 <string>0</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="week_2">
+                <property name="text">
+                 <string>0</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="month_2">
+                <property name="text">
+                 <string>0</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QVBoxLayout" name="budget_layout_2">
+              <item>
+               <widget class="QLabel" name="budget_label">
+                <property name="text">
+                 <string>Бюджет</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="day">
+                <property name="text">
+                 <string>0</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="week">
+                <property name="text">
+                 <string>0</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="month">
+                <property name="text">
+                 <string>0</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="expence_editor_layout">
+          <item>
+           <widget class="QLabel" name="expence_editor_label">
+            <property name="text">
+             <string>Расход</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="add_expence_button">
+            <property name="text">
+             <string>Добавить</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="edit_expence_button">
+            <property name="text">
+             <string>Редактировать</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="delete_expence_button">
+            <property name="text">
+             <string>Удалить</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

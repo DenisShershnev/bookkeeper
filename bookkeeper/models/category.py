@@ -5,7 +5,7 @@ from collections import defaultdict
 from dataclasses import dataclass
 from typing import Iterator
 
-from ..repository.abstract_repository import AbstractRepository
+from bookkeeper.repository.abstract_repository import AbstractRepository
 
 
 @dataclass
@@ -85,6 +85,20 @@ class Category:
             subcats[cat.parent].append(cat)
         return get_children(subcats, self.pk)
 
+    '''def get_last_children(self,
+                          repo: AbstractRepository['Category']
+                          ) -> list['Category']:
+        children = [x for x in self.get_subcategories(repo)]
+        len1 = len(children) + 1
+        while len1 > len(children):
+            len1 = len(children)
+            for i in range(len(children)):
+                t = [x for x in children[i].get_subcategories(repo)]
+                if t != []:
+                    children.pop(i)
+                    break
+        return children'''
+
     @classmethod
     def create_from_tree(
             cls,
@@ -116,3 +130,13 @@ class Category:
             repo.add(cat)
             created[child] = cat
         return list(created.values())
+
+    def tree_from_repo(repo: AbstractRepository['Category']) -> dict[str, str | None]:
+        tree = dict()
+        for x in repo.get_all():
+
+            if x.parent is None:
+                tree[x.name] = None
+            else:
+                tree[x.name] = repo.get(x.parent).name
+        return tree
